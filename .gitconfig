@@ -1,0 +1,11 @@
+[user]
+	name = Dave McKenna
+	email = davemckenna01@gmail.com
+
+[color]
+  ui = auto
+  branch = auto
+  status = auto
+  diff = auto
+[core]
+	editor = vim
