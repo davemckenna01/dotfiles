@@ -1,4 +1,19 @@
+# Programs
 alias less=$PAGER
 alias zless=$PAGER
-alias ls='ls -F'
-alias kd="source kd.sh"
+alias kd='source kd.sh'
+alias g='git status'
+
+# Filesystem nav
+alias cddev='cd ~/Development'
+alias cdb='cd ..'
+
+function mkdc {
+  mkdir $1
+  cd $1
+}
+
+alias rmd='rm -r'
+
+# Utils
+alias reload='source ~/.bashrc'
