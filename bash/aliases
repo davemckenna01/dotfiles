@@ -1,0 +1,4 @@
+alias less=$PAGER
+alias zless=$PAGER
+alias ls='ls -F'
+alias kd="source kd.sh"
