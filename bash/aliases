@@ -7,8 +7,9 @@ alias g='git status'
 # Filesystem nav
 alias dave='cd ~/Development'
 alias cdb='cd ..'
+alias dl='cd ~/Downloads'
 
-function mkdc {
+function mkcd {
   mkdir $1
   cd $1
 }
