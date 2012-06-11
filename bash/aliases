@@ -5,7 +5,7 @@ alias kd='source kd.sh'
 alias g='git status'
 
 # Filesystem nav
-alias cddev='cd ~/Development'
+alias dave='cd ~/Development'
 alias cdb='cd ..'
 
 function mkdc {
