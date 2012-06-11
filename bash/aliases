@@ -8,6 +8,7 @@ alias g='git status'
 alias dave='cd ~/Development'
 alias cdb='cd ..'
 alias dl='cd ~/Downloads'
+alias webapp="cd ~/Development/webapp"
 
 function mkcd {
   mkdir $1
