@@ -1,5 +1,5 @@
 PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin
-export PAGER=~/bin/vimpager
+export PAGER=vimpager
 
 export WORKON_HOME=$HOME/.virtualenvs
 export PROJECT_HOME=$HOME/Development

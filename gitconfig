@@ -9,3 +9,4 @@
   diff = auto
 [core]
 	editor = vim
+	excludesfile = /Users/davemckenna/.gitignore

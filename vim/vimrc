@@ -42,9 +42,9 @@ set mouse=a                       " mouse support
 set clipboard=unnamed             " use system clipboard
 
 " UNCOMMENT TO USE
-set tabstop=2                    " Global tab width.
-set shiftwidth=2                 " And again, related.
-set softtabstop=2
+set tabstop=4                    " Global tab width.
+set shiftwidth=4                 " And again, related.
+set softtabstop=4
 set expandtab                    " Use spaces instead of tabs
 
 set laststatus=2                  " Show the status line all the time

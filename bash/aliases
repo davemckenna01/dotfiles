@@ -15,6 +15,10 @@ function mkcd {
   cd $1
 }
 
+cd(){
+  builtin cd "$@" && ls
+}
+
 alias rmd='rm -r'
 
 # Utils
