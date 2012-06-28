@@ -2,7 +2,6 @@
 alias less=$PAGER
 alias zless=$PAGER
 alias kd='source kd.sh'
-alias g='git status'
 
 # Filesystem nav
 alias dave='cd ~/Development'
@@ -20,6 +19,16 @@ cd(){
 }
 
 alias rmd='rm -r'
+
+# Search
+
+# Searches for text within files in the current dir and below, with files
+# matched by simple glob BASH patterns (i.e. "*" etc)
+# usage: fif \*.js app2.current
+function fif { #means "find in file"
+    # 2nd param can be a regx (but might have to escape some stuff?
+    find . -name "$1" -exec grep -n -H "$2" {} \;
+}
 
 # Utils
 alias reload='source ~/.bashrc'

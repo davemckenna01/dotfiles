@@ -18,3 +18,5 @@ export EC2_CERT=~/.aws/cert-J6ZNWCX65N5M4KH7465DKZVYEQ5PQTT4.pem
 export PATH=$PATH:/usr/local/mysql/bin
 
 export JSTESTDRIVER_HOME=$HOME/bin/JsTestDriver
+
+export NODE_PATH=/usr/local/lib/node_modules/
