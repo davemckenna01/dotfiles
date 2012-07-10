@@ -7,7 +7,9 @@ alias kd='source kd.sh'
 alias dave='cd ~/Development'
 alias cdb='cd ..'
 alias dl='cd ~/Downloads'
+
 alias webapp="cd ~/Development/webapp"
+alias webappapp="cd ~/Development/webapp/public/app"
 
 function mkcd {
   mkdir $1
