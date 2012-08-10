@@ -20,6 +20,7 @@ alias gitl='git log'
 alias gitlg='gitl --graph'
 #f = fancy
 alias gitlfg='git log --graph --date-order --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
+alias gitlfga='git log --graph --date-order --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset" --all'
 
 alias gitlc='git log "$concise_logging_format"'
 alias gitlcg='gitlc --graph'

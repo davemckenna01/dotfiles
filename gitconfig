@@ -8,5 +8,8 @@
   status = auto
   diff = auto
 [core]
-	editor = vim
+    editor = vim
+    pager = less
 	excludesfile = /Users/davemckenna/.gitignore
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
