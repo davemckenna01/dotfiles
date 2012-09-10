@@ -34,3 +34,6 @@ function fif { #means "find in file"
 
 # Utils
 alias reload='source ~/.bashrc'
+
+# Node
+alias super='supervisor -w node_modules lib views env app.js dev.js'
