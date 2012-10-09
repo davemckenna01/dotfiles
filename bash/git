@@ -20,7 +20,7 @@ alias gitl='git log'
 alias gitlg='gitl --graph'
 #f = fancy
 alias gitlfg='git log --graph --date-order --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset"'
-alias gitlfga='git log --graph --date-order --pretty="format:%C(yellow)%h%Cblue%d%Creset %s %C(white) %an, %ar%Creset" --all'
+alias gitlfga='gitlfg --all'
 
 alias gitlc='git log "$concise_logging_format"'
 alias gitlcg='gitlc --graph'
@@ -29,20 +29,3 @@ alias gitfv='git fetch -v'
 
 alias gitco='git checkout'
 
-#alias git-set-remote='echo git config branch.`git-branch-name`.remote "$1" && echo git config branch.`git-branch-name`.merge "refs/heads/$2"'
-
-#alias gitdc='git diff --cached'
-#alias gitdw="git diff $color_ruby_words"
-#alias gitdcw="git diff --cached $color_ruby_words"
-#alias gitd.="git diff --color-words='.'"
-#alias gitdc.="git diff --cached --color-words='.'"
-#alias gitlor_raw='git --no-pager log --graph ORIG_HEAD..HEAD "$concise_logging_format"'
-#alias gitlpend_raw='git --no-pager log --graph $(git config branch.`git-branch-name`.remote)/`git-branch-name`..HEAD "$concise_logging_format"'
-
-#alias gitlor='echo -e "commits from ${color_red}ORIG_HEAD${color_none} to ${color_red}HEAD${color_none}" &&
-#  gitlor_raw && echo'
-
-#alias gitlpend='echo -e "commits from ${color_red}$(git config branch.`git-branch-name`.remote)/`git-branch-name`${color_none} to ${color_red}HEAD${color_none}" &&
-#  gitlpend_raw && echo'
-
-#alias gitlorp='gitlor_raw -p'
