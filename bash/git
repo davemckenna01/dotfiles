@@ -29,6 +29,8 @@ alias gitfv='git fetch -v'
 
 alias gitco='git checkout'
 
+alias gitcam='git commit -am'
+
 #alias git-set-remote='echo git config branch.`git-branch-name`.remote "$1" && echo git config branch.`git-branch-name`.merge "refs/heads/$2"'
 
 #alias gitdc='git diff --cached'

@@ -1,4 +1,4 @@
-PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin
+PATH=/usr/local/bin:/usr/local/sbin:$PATH:$HOME/bin:/opt/ImageMagick/bin
 export PAGER=vimpager
 
 export WORKON_HOME=$HOME/.virtualenvs
