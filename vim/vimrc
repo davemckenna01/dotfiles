@@ -69,9 +69,9 @@ highlight Pmenu ctermfg=1 ctermbg=4 guibg=grey30
 nmap <silent> <leader>/ :nohlsearch<cr>
 
 " Easy window navigation
-nmap <leader>j <C-w><left>
-nmap <leader>k <C-w><down>
-nmap <leader>i <C-w><up>
+nmap <leader>h <C-w><left>
+nmap <leader>j <C-w><down>
+nmap <leader>k <C-w><up>
 nmap <leader>l <C-w><right>
 
 " fugitive
@@ -110,12 +110,10 @@ nmap <leader>c <C-t>
 nmap <leader>s :vsp <CR><C-w>l:exec("tag ".expand("<cword>"))<CR>
 
 "My customizations
-
-map i <up>
-map k <down>
-map j <left>
-map l <right>
-map h <insert>
+"map k <down>
+"map j <left>
+"map l <right>
+"map h <insert>
 
 "set cindent
 
