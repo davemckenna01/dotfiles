@@ -35,5 +35,7 @@ function fif { #means "find in file"
 # Utils
 alias reload='source ~/.bashrc'
 
+alias simpleserver='python -m SimpleHTTPServer'
+
 # Node
 alias super='supervisor -w node_modules,lib,views,dev.js,app.js'
