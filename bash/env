@@ -20,3 +20,7 @@ export PATH=$PATH:/usr/local/mysql/bin
 export JSTESTDRIVER_HOME=$HOME/bin/JsTestDriver
 
 export NODE_PATH=/usr/local/lib/node_modules/
+
+export PATH=${PATH}:$HOME/Development/adt-bundle-mac/sdk/platform-tools:$HOME/Development/adt-bundle-mac/sdk/tools
+
+export ANDROID_BIN=$HOME/Development/adt-bundle-mac/sdk/tools/android
