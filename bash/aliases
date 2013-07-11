@@ -11,6 +11,7 @@ alias dl='cd ~/Downloads'
 alias webapp="cd ~/Development/webapp"
 alias webappapp="cd ~/Development/webapp/public/app"
 alias mobile="cd ~/Development/mobile"
+alias cpdroid="cp ~/Development/mobile/android/bin/hubdoc.apk ~/Development/webapp/public/"
 
 function mkcd {
   mkdir $1
