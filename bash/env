@@ -22,5 +22,8 @@ export JSTESTDRIVER_HOME=$HOME/bin/JsTestDriver
 export NODE_PATH=/usr/local/lib/node_modules/
 
 export PATH=${PATH}:$HOME/Development/mobile/tools/eclipse/adt-bundle-mac/sdk/platform-tools:$HOME/Development/mobile/tools/eclipse/adt-bundle-mac/sdk/tools
+export PATH=./node_modules/.bin:$PATH
+
+[ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
 
 export ANDROID_BIN=$HOME/Development/mobile/tools/eclipse/adt-bundle-mac/sdk/tools/android
