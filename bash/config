@@ -13,3 +13,5 @@ PS1='\[\033[34m\]\w\[\033[31m\]$(__git_ps1)\[\033[00m\]\$ '
 export LS_OPTIONS='--color=auto'
 export CLICOLOR='Yes'
 export LSCOLORS='Exgxfxfxcxdxdxhbadbxbx'
+
+eval "$(fasd --init auto)"
