@@ -27,3 +27,5 @@ export PATH=./node_modules/.bin:$PATH
 [ -s $HOME/.nvm/nvm.sh ] && . $HOME/.nvm/nvm.sh # This loads NVM
 
 export ANDROID_BIN=$HOME/Development/mobile/tools/eclipse/adt-bundle-mac/sdk/tools/android
+
+export PATH=${PATH}:/usr/local/share/npm/bin

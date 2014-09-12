@@ -11,7 +11,7 @@ alias dl='cd ~/Downloads'
 alias webapp="cd ~/Development/webapp"
 alias webappapp="cd ~/Development/webapp/public/app"
 alias mobile="cd ~/Development/mobile"
-alias cpdroid="cp ~/Development/mobile/android/bin/hubdoc.apk ~/Development/webapp/public/"
+alias cpdroid="cp ~/Development/mobile/platforms/android/bin/Hubdoc.apk ~/Development/webapp/public/"
 
 function mkcd {
   mkdir $1
@@ -46,3 +46,7 @@ function gentestnode {
     mkdir test
     curl https://gist.githubusercontent.com/davemckenna01/b23fa9b55b3e2c21fc36/raw/cff9b50fa697d35e5ab5c661d264f6d260d6968e/gistfile1.js > test/test.js 
 }
+
+alias preparei='cordova prepare ios'
+alias preparea='cordova prepare android'
+alias prepareall='preparei && preparea'
