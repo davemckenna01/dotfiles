@@ -29,3 +29,8 @@ export PATH=./node_modules/.bin:$PATH
 export ANDROID_BIN=$HOME/Development/mobile/tools/eclipse/adt-bundle-mac/sdk/tools/android
 
 export PATH=${PATH}:/usr/local/share/npm/bin
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
+
+PATH=$PATH:$HOME/.rvm/bin # Add RVM to PATH for scripting

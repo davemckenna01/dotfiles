@@ -50,3 +50,5 @@ function gentestnode {
 alias preparei='cordova prepare ios'
 alias preparea='cordova prepare android'
 alias prepareall='preparei && preparea'
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
