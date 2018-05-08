@@ -5,12 +5,13 @@ alias kd='source kd.sh'
 
 # Filesystem nav
 alias dave='cd ~/Development'
+alias hubdoc='cd ~/Development/hubdoc'
 alias cdb='cd ..'
 alias dl='cd ~/Downloads'
 
-alias webapp="cd ~/Development/webapp"
-alias webappapp="cd ~/Development/webapp/public/app"
-alias mobile="cd ~/Development/mobile"
+alias webapp="cd ~/Development/hubdoc/webapp"
+alias webappapp="cd ~/Development/hubdoc/webapp/public/app"
+alias mobile="cd ~/Development/hubdoc/mobile"
 alias cpdroid="cp ~/Development/mobile/platforms/android/bin/Hubdoc.apk ~/Development/webapp/public/"
 
 function mkcd {
@@ -52,3 +53,5 @@ alias preparea='cordova prepare android'
 alias prepareall='preparei && preparea'
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+alias dbconnect='psql -W -h localhost -p 5432 hubdocdb hubdoc'
