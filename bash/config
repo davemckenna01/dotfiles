@@ -14,4 +14,4 @@ export LS_OPTIONS='--color=auto'
 export CLICOLOR='Yes'
 export LSCOLORS='Exgxfxfxcxdxdxhbadbxbx'
 
-eval "$(fasd --init auto)"
+#eval "$(fasd --init auto)"
