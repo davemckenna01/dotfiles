@@ -1,3 +1,5 @@
+source ~/.bash_git
+
 function git-branch-name {
   git symbolic-ref HEAD | sed 's/.*\///'
 }
