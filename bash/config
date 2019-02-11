@@ -15,3 +15,17 @@ export CLICOLOR='Yes'
 export LSCOLORS='Exgxfxfxcxdxdxhbadbxbx'
 
 #eval "$(fasd --init auto)"
+
+#==================== INFINITE BASH HISTORY ============
+# remove duplicates
+export HISTCONTROL=ignoredups:erasedups
+
+# infinite history
+export HISTSIZE=
+export HISTFILESIZE=
+
+# append to history, not overwrite
+shopt -s histappend
+
+# Save and reload the history after each command finishes
+export PROMPT_COMMAND="history -a; history -c; history -r; $PROMPT_COMMAND"
