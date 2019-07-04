@@ -1,4 +1,4 @@
-source ~/.bash_git
+source ~/Development/dotfiles/bash/.bash_git
 
 function git-branch-name {
   git symbolic-ref HEAD | sed 's/.*\///'
