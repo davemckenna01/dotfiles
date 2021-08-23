@@ -152,3 +152,5 @@ set grepprg=grep\ -nH\ $*
 
 " Space will toggle folds
 nnoremap <space> za
+
+autocmd! GUIEnter * set vb t_vb=
