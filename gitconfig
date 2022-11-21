@@ -10,6 +10,6 @@
 [core]
     editor = vim
     pager = less
-	excludesfile = /Users/davemckenna/.gitignore
+	excludesfile = /Users/dave.mckenna/.gitignore
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
