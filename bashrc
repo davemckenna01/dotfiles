@@ -10,10 +10,6 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
 
-function aws {
-  aws-vault exec "${AWS_PROFILE:-default}" -- aws "$@"
-}
- 
 function terraform {
   aws-vault exec "${AWS_PROFILE:-default}" -- terraform "$@"
 }
@@ -53,7 +49,7 @@ function aws-ecr-login {
   [[ $AWS_VERSION == 2 ]] &&
     {
       local DOCKER_PASSWORD;
-      DOCKER_PASSWORD="$(aws-vault exec "${AWS_PROFILE:-hubdoc_dev}" -- aws ecr get-login-password --region us-east-1)" \
+      DOCKER_PASSWORD="$(aws-vault exec "${AWS_PROFILE:-Developer-xero-hubdoc-dev}" -- aws ecr get-login-password --region us-east-1)" \
         || { echo "ECR get password failed: $DOCKER_PASSWORD"; return; };
  
       ( echo "$DOCKER_PASSWORD" | docker login --username AWS --password-stdin '260122403476.dkr.ecr.us-east-1.amazonaws.com' ) \
@@ -63,10 +59,11 @@ function aws-ecr-login {
   [[ $AWS_VERSION == 1 ]] &&
     {
       local LOGIN_COMMAND;
-      LOGIN_COMMAND="$(aws-vault exec "${AWS_PROFILE:-hubdoc_dev}" -- aws ecr get-login --no-include-email --region us-east-1)" \
+      LOGIN_COMMAND="$(aws-vault exec "${AWS_PROFILE:-Developer-xero-hubdoc-dev}" -- aws ecr get-login --no-include-email --region us-east-1)" \
         || { echo "ECR login failed: $LOGIN_COMMAND"; return; };
  
       eval "$LOGIN_COMMAND";
     } && return;
 }
 
+source ~/Development/aws-sso-tools/aws-sso.sh

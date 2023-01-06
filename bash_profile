@@ -1,5 +1,5 @@
 if [ -f ~/.bashrc ]; then
-   source ~/.bashrc
+   . ~/.bashrc
 fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
@@ -42,6 +42,13 @@ export SDKMAN_DIR="/Users/dave.mckenna/.sdkman"
 [[ -s "/Users/dave.mckenna/.sdkman/bin/sdkman-init.sh" ]] && source "/Users/dave.mckenna/.sdkman/bin/sdkman-init.sh"
 
 #export PATH="/usr/local/opt/openjdk/bin:$PATH"
+
+# Setting PATH for Python 2.7
+# The original version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+export PATH
+# Set PATH, MANPATH, etc., for Homebrew.
+eval "$(/opt/homebrew/bin/brew shellenv)"
 
 # Setting PATH for Python 2.7
 # The original version is saved in .bash_profile.pysave
