@@ -11,5 +11,6 @@
     editor = vim
     pager = less
 	excludesfile = /Users/dave.mckenna/.gitignore
+	autocrlf = input
 [alias]
 	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --

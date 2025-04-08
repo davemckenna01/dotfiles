@@ -3,7 +3,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
-export PATH=${PATH}:~/Library/Python/2.7/bin
+# export PATH=${PATH}:~/Library/Python/2.7/bin
 # added by Anaconda2 2019.03 installer
 # >>> conda init >>>
 # !! Contents within this block are managed by 'conda init' !!
@@ -45,12 +45,21 @@ export SDKMAN_DIR="/Users/dave.mckenna/.sdkman"
 
 # Setting PATH for Python 2.7
 # The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH
+# PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
+# export PATH
 # Set PATH, MANPATH, etc., for Homebrew.
 eval "$(/opt/homebrew/bin/brew shellenv)"
 
-# Setting PATH for Python 2.7
-# The original version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/2.7/bin:${PATH}"
-export PATH
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/dave.mckenna/google-cloud-sdk/path.bash.inc' ]; then . '/Users/dave.mckenna/google-cloud-sdk/path.bash.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/dave.mckenna/google-cloud-sdk/completion.bash.inc' ]; then . '/Users/dave.mckenna/google-cloud-sdk/completion.bash.inc'; fi
+
+# Created by `pipx` on 2025-02-22 21:56:02
+export PATH="$PATH:/Users/dave.mckenna/.local/bin"
+
+# Added by Windsurf
+export PATH="/Users/dave.mckenna/.codeium/windsurf/bin:$PATH"
+
+eval "$(pyenv init -)"
